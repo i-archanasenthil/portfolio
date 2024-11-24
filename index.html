@@ -1,80 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Your Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    .container {
-      width: 80%;
-      margin: 0 auto;
-      padding: 2rem 0;
-    }
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .project {
-      background-color: white;
-      padding: 1rem;
-      border-radius: 5px;
-      width: 30%;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archana Senthil - Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="artifacts/style/style.css">
+
+    <!-- Animations (AOS for scroll animations) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-  <header>
-    <h1>Archana's Portfolio</h1>
-    <p>Welcome to my personal website. Here you can find my projects and work experience.</p>
-  </header>
 
-  <div class="container">
-    <section class="about">
-      <h2>About Me</h2>
-      <p>Hi, I'm Archana! I have over 2 years of experience in data engineering, architecture, and analytics. I'm passionate about building data-driven solutions that make an impact.</p>
+    <!-- Navigation Menu -->
+    <nav class="nav-wrapper teal">
+        <div class="container">
+            <a href="#" class="brand-logo left"><img src="artifacts/images/logo.png" alt="Logo" class="logo-img"></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#download-resume">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section scrollspy">
+        <div class="container">
+            <h2 class="left-align">About Me</h2>
+            <p>I am Archana Senthil, a passionate data professional with a diverse skill set in data analysis, machine learning, and cloud technologies.</p>
+        </div>
     </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>Details about your first project.</p>
-        <a href="https://github.com/yourusername/project1">GitHub Repo</a>
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>Details about your second project.</p>
-        <a href="https://github.com/yourusername/project2">GitHub Repo</a>
-      </div>
-      <!-- Add more projects as needed -->
+    <!-- Skills Section -->
+    <section id="skills" class="section scrollspy">
+        <div class="container">
+            <h2 class="left-align">Skills / Tools / Technologies</h2>
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Python</span>
+                            <p>Experience in building data pipelines and machine learning models.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">SQL</span>
+                            <p>Advanced SQL skills for working with large datasets and databases.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Cloud Technologies</span>
+                            <p>Experience with Azure, AWS, and GCP for deploying scalable applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </div>
 
-  <footer>
-    <p>&copy; 2024 Ganesh | <a href="mailto:your.email@example.com">Contact</a></p>
-  </footer>
+    <!-- Projects Section -->
+    <section id="projects" class="section scrollspy">
+        <div class="container">
+            <h2 class="left-align">Projects</h2>
+            <div class="row">
+                <div class="col s12 m6 l4" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="artifacts/images/project1.jpg" alt="Project 1">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Project 1</span>
+                            <p>A web scraping project that collects data from various sources.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section scrollspy">
+        <div class="container">
+            <h2 class="left-align">Employment Experience</h2>
+            <p>Currently working at XYZ Company as a Data Engineer with expertise in cloud and machine learning projects.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section scrollspy">
+        <div class="container">
+            <h2 class="left-align">Education</h2>
+            <p>Bachelor's Degree in Computer Science from ABC University, 2018.</p>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section scrollspy">
+        <div class="container">
+            <h2 class="left-align">Certifications</h2>
+            <ul>
+                <li>Azure Data Engineer Associate</li>
+                <li>Google Cloud Professional Data Engineer</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section (with Citizenship) -->
+    <section id="contact" class="section scrollspy">
+        <div class="container">
+            <h2 class="left-align">Contact Information & Citizenship</h2>
+            <p>Email: <a href="mailto:i.archanasenthil@gmail.com">i.archanasenthil@gmail.com</a></p>
+            <p>Phone: 123-456-7890</p>
+            <p>Citizenship: Indian</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/archana-senthil/" target="_blank">linkedin.com/in/archana-senthil</a></p>
+        </div>
+    </section>
+
+    <!-- Download Resume Section -->
+    <section id="download-resume" class="section scrollspy">
+        <div class="container">
+            <h2 class="left-align">Download Resume</h2>
+            <a href="artifacts/images/resume.pdf" class="btn waves-effect waves-light teal" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer teal">
+        <div class="container">
+            <p class="center-align">© 2024 Archana Senthil</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="artifacts/script/script.js"></script>
 </body>
 </html>

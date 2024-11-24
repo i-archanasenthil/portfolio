@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    padding-top: 50px; /* Prevent content from being hidden under the fixed nav */
+}
+
+nav {
+    background-color: #00796b;
+}
+
+nav a {
+    color: white;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #00796b;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Project Cards */
+.card {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+.btn {
+    background-color: #00796b;
+}
+
+footer {
+    background-color: #00796b;
+    padding: 20px 0;
+}
+
+/* ScrollSpy Effect */
+.scrollspy {
+    padding-top: 50px;
+}
+
+.scrollspy.active {
+    background-color: #00796b;
+}
+
+/* Text Alignment for Headings */
+.left-align {
+    text-align: left;
+}
+
+/* Animation Styling */
+aos-init {
+    opacity: 0;
+    transform: translateY(50px);
+}
+aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
