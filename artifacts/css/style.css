@@ -1,31 +1,14 @@
-/* General Styles */
+/* Custom Styles for Tailwind */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fafafa;
-    color: #333;
-    padding-top: 50px; /* Prevent content from being hidden under the fixed nav */
 }
 
-nav {
-    background-color: #00796b;
-}
-
-nav a {
-    color: white;
-}
-
-.logo-img {
-    height: 50px;
-}
-
-h2 {
+h1, h2 {
     font-family: 'Open Sans', sans-serif;
-    color: #00796b;
 }
 
-/* Section Styling */
-.section {
-    padding: 60px 0;
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -33,47 +16,26 @@ h2 {
     margin: 0 auto;
 }
 
-/* Project Cards */
-.card {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease-in-out;
+section {
+    padding: 4rem 0;
 }
 
-.card:hover {
-    transform: scale(1.05);
+h2 {
+    color: #333;
 }
 
-/* Button Styling */
-.btn {
-    background-color: #00796b;
+.text-yellow-300 {
+    color: #FFDD57;
 }
 
-footer {
-    background-color: #00796b;
-    padding: 20px 0;
+.text-yellow-500 {
+    color: #FFB13A;
 }
 
-/* ScrollSpy Effect */
-.scrollspy {
-    padding-top: 50px;
+.bg-indigo-600 {
+    background-color: #5C6BC0;
 }
 
-.scrollspy.active {
-    background-color: #00796b;
-}
-
-/* Text Alignment for Headings */
-.left-align {
-    text-align: left;
-}
-
-/* Animation Styling */
-aos-init {
-    opacity: 0;
-    transform: translateY(50px);
-}
-aos-animate {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+.bg-gradient-to-r {
+    background-image: linear-gradient(to right, #5C6BC0, #66BB6A);
 }
