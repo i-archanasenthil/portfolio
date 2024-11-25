@@ -1,24 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('section');
-    // Ensure the home section is always visible
-    const homeSection = document.querySelector('#home');
-    homeSection.classList.remove('opacity-0'); // Remove the fade-in effect on the home section
-
-    // Add fade-in effect for other sections as user scrolls
-    sections.forEach(section => {
-        if (section !== homeSection) { // Skip home section
-            section.classList.add('transition-opacity', 'duration-1000');
-            section.classList.add('opacity-0');
+// You can add interactivity here if needed.
+// Example: Simple scroll animation control
+window.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('.animate-fade-in-left, .animate-fade-in-right');
+    elements.forEach(function(el) {
+        const position = el.getBoundingClientRect();
+        if (position.top < window.innerHeight && position.bottom >= 0) {
+            el.classList.add('animated');
         }
-    });
-
-    window.addEventListener('scroll', function () {
-        sections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top < window.innerHeight) {
-                section.classList.remove('opacity-0');
-                section.classList.add('opacity-100');
-            }
-        });
     });
 });

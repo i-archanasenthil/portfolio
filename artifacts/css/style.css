@@ -1,41 +1,71 @@
-/* Custom Styles for Tailwind */
-body {
-    font-family: 'Roboto', sans-serif;
+/* Golden Ratio Image Size Adjustment */
+#home .w-1\/3 img {
+    width: 100%;
+    max-width: 300px; /* Set the maximum width */
+    height: calc(300px / 1.618); /* Set the height using the golden ratio */
+    border-radius: 10px;
+    border: 4px solid #00b3b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    font-family: 'Open Sans', sans-serif;
+/* Image and Content Alignment */
+#home .w-1\/3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-a {
+/* Content Section Style */
+#home .w-2\/3 {
+    padding-left: 30px;
+}
+
+.links a {
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #007d7d;
+    transform: scale(1.05);
+}
+
+/* Fade-in Animation */
+@keyframes fade-in-left {
+    0% { opacity: 0; transform: translateX(-30px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fade-in-right {
+    0% { opacity: 0; transform: translateX(30px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fade-in-left {
+    animation: fade-in-left 1s ease-out forwards;
+}
+
+.animate-fade-in-right {
+    animation: fade-in-right 1s ease-out forwards;
+}
+
+/* General Button Styling */
+.btn-linkedin, .btn-email, .btn-resume {
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
     text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Button Hover Effect */
+.btn-linkedin:hover, .btn-email:hover, .btn-resume:hover {
+    transform: scale(1.1);
 }
 
-section {
-    padding: 4rem 0;
-}
-
-h2 {
-    color: #333;
-}
-
-.text-yellow-300 {
-    color: #FFDD57;
-}
-
-.text-yellow-500 {
-    color: #FFB13A;
-}
-
-.bg-indigo-600 {
-    background-color: #5C6BC0;
-}
-
-.bg-gradient-to-r {
-    background-image: linear-gradient(to right, #5C6BC0, #66BB6A);
+/* Add some margin to the links */
+.links a {
+    margin-right: 10px;
 }
