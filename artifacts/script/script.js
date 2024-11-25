@@ -1,24 +1,29 @@
+// Function to add fade-in animation on scroll (if needed in future for other sections)
 document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('section');
-    // Ensure the home section is always visible
-    const homeSection = document.querySelector('#home');
-    homeSection.classList.remove('opacity-0'); // Remove the fade-in effect on the home section
+    const sections = document.querySelectorAll('.animate-fade-in-left, .animate-fade-in-right');
 
-    // Add fade-in effect for other sections as user scrolls
-    sections.forEach(section => {
-        if (section !== homeSection) { // Skip home section
-            section.classList.add('transition-opacity', 'duration-1000');
-            section.classList.add('opacity-0');
-        }
-    });
-
+    // Add fade-in effect on scroll
     window.addEventListener('scroll', function () {
-        sections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top < window.innerHeight) {
-                section.classList.remove('opacity-0');
-                section.classList.add('opacity-100');
+        let scrollPos = window.scrollY + window.innerHeight;
+        sections.forEach(function (section) {
+            if (scrollPos > section.offsetTop) {
+                section.classList.add('fade-in');
             }
+        });
+    });
+});
+
+// Smooth Scroll for Navigation Links
+const navLinks = document.querySelectorAll('nav ul li a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+            top: targetElement.offsetTop - 80,  // Adjust for header height
+            behavior: 'smooth'
         });
     });
 });
