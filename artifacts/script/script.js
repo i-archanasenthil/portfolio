@@ -9,3 +9,16 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+document.getElementById('groupToggleBtn').addEventListener('click', function() {
+    const allSkills = document.querySelector('.all-skills');
+    const groupedSkills = document.getElementById('groupedSkills');
+    
+    if (groupedSkills.classList.contains('hidden')) {
+        allSkills.classList.add('hidden');
+        groupedSkills.classList.remove('hidden');
+    } else {
+        allSkills.classList.remove('hidden');
+        groupedSkills.classList.add('hidden');
+    }
+});
