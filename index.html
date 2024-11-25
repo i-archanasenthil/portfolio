@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archana Senthil - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="artifacts/style/style.css">
+    <link rel="stylesheet" href="artifacts/css/style.css">
 </head>
 <body class="bg-gray-900 text-gray-300 font-sans">
     <!-- Navigation Bar -->
@@ -65,16 +65,235 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about" class="py-20 px-6 bg-gray-800">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
-            <p class="text-gray-400 leading-7">
-                Experienced developer specializing in tools and technologies that deliver efficient solutions. 
-                Passionate about solving real-world problems and collaborating with teams to build impactful projects.
-            </p>
+            <h2 class="text-3xl font-bold text-white mb-6">About Me</h2>
+            <div class="text-gray-300 animate-fade-in-right">
+                <p class="text-lg leading-relaxed mb-6">
+                    I'm a passionate and results-driven Data Scientist with over four years of experience in data analysis and two years of hands-on expertise with SAP. I specialize in turning complex data into clear insights that empower organizations to make informed, data-driven decisions.
+                </p>
+                
+                <!-- Toggle Button for Grouping Skills -->
+                <div class="mb-6">
+                    <button id="groupToggleBtn" class="bg-teal-400 text-white px-4 py-2 rounded-lg hover:bg-teal-500 transition duration-300">
+                        Group by Category
+                    </button>
+                </div>
+
+                <!-- Tools Section -->
+                <div id="skillsContainer" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- All Skills (Initially Visible) -->
+                    <div class="all-skills space-y-4">
+                        <!-- Data Analytics & Visualization -->
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/powerbi-logo.png" alt="Power BI" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">Power BI</h3>
+                            </div>
+                        </div>
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/cognos-logo.png" alt="IBM Cognos" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">IBM Cognos</h3>
+                            </div>
+                        </div>
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/tableau-logo.png" alt="Tableau" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">Tableau</h3>
+                            </div>
+                        </div>
+
+                        <!-- Data Science & Programming -->
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/python-logo.png" alt="Python" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">Python</h3>
+                            </div>
+                        </div>
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/r-logo.png" alt="R" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">R</h3>
+                            </div>
+                        </div>
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/jupyter-logo.png" alt="Jupyter" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">Jupyter</h3>
+                            </div>
+                        </div>
+
+                        <!-- Cloud & Data Engineering -->
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/snowflake-logo.png" alt="Snowflake" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">Snowflake</h3>
+                            </div>
+                        </div>
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/azure-logo.png" alt="Azure" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">Azure</h3>
+                            </div>
+                        </div>
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/aws-logo.png" alt="AWS" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">AWS</h3>
+                            </div>
+                        </div>
+
+                        <!-- Machine Learning & AI -->
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/tensorflow-logo.png" alt="TensorFlow" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">TensorFlow</h3>
+                            </div>
+                        </div>
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/keras-logo.png" alt="Keras" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">Keras</h3>
+                            </div>
+                        </div>
+
+                        <!-- Development & Automation -->
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/git-logo.png" alt="Git" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">Git</h3>
+                            </div>
+                        </div>
+                        <div class="card bg-gray-700 p-4 rounded-lg shadow-sm flex items-center space-x-3 hover:bg-gray-600 transition-all duration-300">
+                            <img src="artifacts/images/docker-logo.png" alt="Docker" class="w-8 h-8">
+                            <div>
+                                <h3 class="text-lg font-semibold text-teal-400">Docker</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grouped Skills (Initially Hidden) -->
+                    <div id="groupedSkills" class="hidden">
+                        <!-- Data Analytics & Visualization -->
+                        <div class="category bg-gray-700 p-4 rounded-lg shadow-sm mb-4">
+                            <h3 class="text-xl font-bold text-teal-400 mb-2">Data Analytics & Visualization</h3>
+                            <div class="flex flex-wrap space-x-4">
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/powerbi-logo.png" alt="Power BI" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">Power BI</h4>
+                                    </div>
+                                </div>
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/cognos-logo.png" alt="IBM Cognos" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">IBM Cognos</h4>
+                                    </div>
+                                </div>
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/tableau-logo.png" alt="Tableau" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">Tableau</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Data Science & Programming -->
+                        <div class="category bg-gray-700 p-4 rounded-lg shadow-sm mb-4">
+                            <h3 class="text-xl font-bold text-teal-400 mb-2">Data Science & Programming</h3>
+                            <div class="flex flex-wrap space-x-4">
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/python-logo.png" alt="Python" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">Python</h4>
+                                    </div>
+                                </div>
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/r-logo.png" alt="R" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">R</h4>
+                                    </div>
+                                </div>
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/jupyter-logo.png" alt="Jupyter" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">Jupyter</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cloud & Data Engineering -->
+                        <div class="category bg-gray-700 p-4 rounded-lg shadow-sm mb-4">
+                            <h3 class="text-xl font-bold text-teal-400 mb-2">Cloud & Data Engineering</h3>
+                            <div class="flex flex-wrap space-x-4">
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/snowflake-logo.png" alt="Snowflake" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">Snowflake</h4>
+                                    </div>
+                                </div>
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/azure-logo.png" alt="Azure" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">Azure</h4>
+                                    </div>
+                                </div>
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/aws-logo.png" alt="AWS" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">AWS</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Machine Learning & AI -->
+                        <div class="category bg-gray-700 p-4 rounded-lg shadow-sm mb-4">
+                            <h3 class="text-xl font-bold text-teal-400 mb-2">Machine Learning & AI</h3>
+                            <div class="flex flex-wrap space-x-4">
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/tensorflow-logo.png" alt="TensorFlow" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">TensorFlow</h4>
+                                    </div>
+                                </div>
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/keras-logo.png" alt="Keras" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">Keras</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Development & Automation -->
+                        <div class="category bg-gray-700 p-4 rounded-lg shadow-sm mb-4">
+                            <h3 class="text-xl font-bold text-teal-400 mb-2">Development & Automation</h3>
+                            <div class="flex flex-wrap space-x-4">
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/git-logo.png" alt="Git" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">Git</h4>
+                                    </div>
+                                </div>
+                                <div class="card bg-gray-600 p-3 rounded-lg shadow-sm flex items-center space-x-3">
+                                    <img src="artifacts/images/docker-logo.png" alt="Docker" class="w-6 h-6">
+                                    <div>
+                                        <h4 class="text-sm font-semibold text-teal-400">Docker</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 px-6 bg-gray-900">
